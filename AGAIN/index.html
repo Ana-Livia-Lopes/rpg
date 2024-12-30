@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFEQ</title>
+    <link rel="icon" href="download (19).jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <h1>Organização Federativa Experimental de Quesadilla</h1>
+        <h2>- OFEQ -</h2>
+    </div>
+    <div id="textinho">
+        <p>Seja bem vindo à nossa página oficial, aqui você encontrará informações e serviços exclusivos projetados para oferecer a melhor experiência possível.</p>
+        <p>Antes de continuar, gostaríamos de conhecer um pouco mais sobre você.</p>
+        <p>Isso é essencial para garantirmos a nossa segurança, evitando conflitos e protegendo informações sensíveis.</p>
+        <div class="vazio">
+            <p>E evitando possíveis processos caso algo saia daqui :]</p>
+        </div>
+        <p>Por favor, insira seu nome na caixa de texto abaixo:</p>
+    </div>
+    <script>
+        function verificarResposta() {
+            const input =
+        document.getElementById('resposta').value.trim().toLowerCase();
+            if (input === 'ali') {
+                window.location.href = 'Ali.html';
+            } else if (input === 'kally') {
+                window.location.href = 'Kally.html';
+            } else if (input === 'viktoria') {
+                window.location.href = 'Viktoria.html';
+            } else if (input === 'barbara') {
+                window.location.href = 'Barbara.html';
+            } else {
+                alert('Resposta incorreta');
+            }
+            return false;
+        }
+    </script>
+    <form onsubmit="return verificarResposta()">
+        <input type="text" id="resposta" name="resposta" required>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

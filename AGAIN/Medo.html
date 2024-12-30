@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medo</title>
+    <link rel="icon" href="download (19).jpg">
+    <link rel="stylesheet" href="Medo.css">
+</head>
+<body>
+    <div id="charada">
+        <h1>A solitária</h1>
+        <p>Eu sou as janelas para o que está oculto. Mas também posso esconder o que você não quer ver</p>
+        <div class="vazio">
+            <p>Você pode nos usar, mas não pode nos tocar :]</p>
+        </div>
+        <p>O que eu sou?</p>
+        </div>
+        <script>
+            function verificarResposta() {
+                const input =
+            document.getElementById('resposta').value.trim().toLowerCase();
+                if (input === 'olhos' || input === 'Olhos') {
+                    window.location.href = 'Olhos.html';
+                } else {
+                    alert('Resposta incorreta');
+                }
+                return false;
+            }
+        </script>
+        <form onsubmit="return verificarResposta()">
+            <input type="text" id="resposta" name="resposta" required>
+            <button type="submit">Enviar</button>
+        </form>
+</body>
+</html>

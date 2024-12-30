@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbara</title>
+    <link rel="icon" href="download (19).jpg">
+    <link rel="stylesheet" href="Barbara.css">
+</head>
+<body>
+    <div id="charada">
+    <h1>A solitária</h1>
+    <p>Eu sou algo que acontece sem aviso, alterando o curso de tudo ao redor.</p>
+    <div class="vazio">
+        <p>Eu sou o que aconteceu com seus pais :]</p>
+    </div>
+    <p>O que eu sou?</p>
+    </div>
+    <script>
+        function verificarResposta() {
+            const input =
+        document.getElementById('resposta').value.trim().toLowerCase();
+            if (input === 'acidente' || input === 'Acidente') {
+                window.location.href = 'Acidente.html';
+            } else {
+                alert('Resposta incorreta');
+            }
+            return false;
+        }
+    </script>
+    <form onsubmit="return verificarResposta()">
+        <input type="text" id="resposta" name="resposta" required>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

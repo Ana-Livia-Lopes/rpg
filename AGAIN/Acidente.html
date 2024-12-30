@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acidente</title>
+    <link rel="icon" href="download (19).jpg">
+    <link rel="stylesheet" href="Acidente.css">
+</head>
+<body>
+    <div id="charada">
+        <h1>A solitária</h1>
+        <p>Eu sou o eco das palavras não ditas, aquilo que você mais sente mas não consegue compartilhar.</p>
+        <div class="vazio">
+            <p>Um companheiro invisível :]</p>
+        </div>
+        <p>O que eu sou?</p>
+        </div>
+        <script>
+            function verificarResposta() {
+                const input =
+            document.getElementById('resposta').value.trim().toLowerCase();
+                if (input === 'medo' || input === 'Medo') {
+                    window.location.href = 'Medo.html';
+                } else {
+                    alert('Resposta incorreta');
+                }
+                return false;
+            }
+        </script>
+        <form onsubmit="return verificarResposta()">
+            <input type="text" id="resposta" name="resposta" required>
+            <button type="submit">Enviar</button>
+        </form>
+</body>
+</html>

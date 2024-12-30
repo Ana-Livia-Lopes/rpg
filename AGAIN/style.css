@@ -1,0 +1,25 @@
+#cabecalho{
+  text-align: center
+}
+#textinho{
+  text-align: center;
+}
+.vazio{
+  color: transparent;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-image: url(Federation.icon.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+form{
+  text-align: center;
+  padding: 20px;
+}
+button{
+  margin-top: 10px;
+}

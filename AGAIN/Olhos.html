@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olhos</title>
+    <link rel="icon" href="download (19).jpg">
+    <link rel="stylesheet" href="Olhos.css">
+</head>
+<body>
+    <div id="charada">
+        <h1>A solitária</h1>
+        <p>Eu sou o silêncio que preenche os espaços vazios, o vazio que fala mais alto que qualquer palavra.</p>
+        <div class="vazio">
+            <p>Você sempre ouve :]</p>
+        </div>
+        <p>O que eu sou?</p>
+        </div>
+        <script>
+            function verificarResposta() {
+                const input =
+            document.getElementById('resposta').value.trim().toLowerCase();
+                if (input === 'ruido' || input === 'Ruido' || input === 'Ruído' || input === 'ruído') {
+                    window.location.href = 'Ruido.html';
+                } else {
+                    alert('Resposta incorreta');
+                }
+                return false;
+            }
+        </script>
+        <form onsubmit="return verificarResposta()">
+            <input type="text" id="resposta" name="resposta" required>
+            <button type="submit">Enviar</button>
+        </form>
+</body>
+</html>
